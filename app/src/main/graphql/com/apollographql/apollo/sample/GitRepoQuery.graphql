@@ -1,0 +1,10 @@
+query GetGitInfo($owner:String!) {
+  user(login: $owner) {
+    name
+    bio
+    location
+    starredRepositories {
+      totalCount
+    }
+  }
+}
